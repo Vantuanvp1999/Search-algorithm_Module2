@@ -9,6 +9,11 @@ public class Main {
         System.out.println(search(arr,54));
         System.out.println("Chỉ số của 12:");
         System.out.println(search(arr,12));
+        System.out.println("Chỉ số của 21");
+        System.out.println(search(arr,21));
+        System.out.println("Chỉ số của 13");
+        System.out.println(search(arr,13));
+
 
     }
     public static int search(int[] arr, int target) {
@@ -16,6 +21,7 @@ public class Main {
         for(int i=0;i<arr.length;i++) {
             if(arr[i]==target) {
                 index=i;
+                break;
             }
         }return index;
     }
